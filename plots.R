@@ -52,11 +52,11 @@ contact_tracing_map <- hcmap("custom/africa", data = just_testing_data_latest, v
       borderColor = "#FAFAFA", borderWidth = 0.1) %>%
       hc_tooltip(useHTML = TRUE, headerFormat = "", pointFormat = tltip) %>%
     hc_legend(align = "center", layout = "horizontal", verticalAlign = "middle", x = -160, y= 120, valueDecimals = 0) %>%
-    hc_colorAxis(minColor = "#e2e2e2", maxColor = milken_red,
+    hc_colorAxis(minColor = "#e2e2e2", maxColor = milken,
              type = "linear")
 
 
-contact_tracing_map
+# contact_tracing_map
 
 ## Save vis
 saveWidget(contact_tracing_map, file="contact_tracing_map.html")
